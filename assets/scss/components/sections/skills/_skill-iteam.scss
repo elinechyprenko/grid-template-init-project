@@ -1,36 +1,38 @@
 .skill-iteam {
-    position: relative;
-    /* делаем так, что-бы все блоки стояли на одном экране с padding  */
+  position: relative;
+  /* делаем так, что-бы все блоки стояли на одном экране с padding  */
   min-height: calc(33.33vh - 40px / 3);
   overflow: hidden;
 
-  &:hover .skill-iteam__overlay{
-  /* стоит inline стиль и кроме imprortant ничего не подходит */
-  opacity: 0.95 !important ;
+  &:hover .skill-iteam__overlay {
+    /* стоит inline стиль и кроме imprortant ничего не подходит */
+    opacity: 0.95 !important;
   }
 
   &:hover .skill-iteam__image {
     transform: scale(1.1);
-    }
-    // @for $i from 1 through 3 {
-    //   ul:nth-child(3n + #{$i}) { - подставляем :nth-of-type(#{$i})
-    //     background-color: lighten($base-color, $i * 5%); - подставляем grid-area: a1 #{$i};
-    //   }
-    // }
-    @for $i from 1 through 9 {
-      &:nth-of-type(#{$i}) {
-        grid-area: a1 #{$i};
-      }
-      }
-    }
-  @media (min-height: 691px) {
-    .skill-iteam {
-      min-height: calc(33.33vh - 40px / 3);
-    }
-    }
-
-  @media (max-height: 690px) {
-      .skill-iteam {
-      min-height: calc(230px - 40px / 3);
-      }
   }
+
+  // @for $i from 1 through 3 {
+  //   ul:nth-child(3n + #{$i}) { - подставляем :nth-of-type(#{$i})
+  //     background-color: lighten($base-color, $i * 5%); - подставляем grid-area: a1 #{$i};
+  //   }
+  // }
+  @for $i from 1 through 9 {
+    &:nth-of-type(#{$i}) {
+      grid-area: a1 #{$i};
+    }
+  }
+}
+
+@media (min-height: 691px) {
+  .skill-iteam {
+    min-height: calc(33.33vh - 40px / 3);
+  }
+}
+
+@media (max-height: 690px) {
+  .skill-iteam {
+    min-height: calc(230px - 40px / 3);
+  }
+}

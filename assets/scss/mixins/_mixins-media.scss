@@ -8,6 +8,7 @@ $diff: 0.2px;
     @content;
   }
 }
+
 // @include ul {font-size: 1.5rem } 
 @mixin ul {
   @media (max-width: ($ul - $diff)) {

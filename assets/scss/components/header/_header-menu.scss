@@ -1,19 +1,19 @@
 /* устанавливаем position: absolute, что-бы положение header-menu не зависело от положения header-content */
 .header-menu {
-    position: absolute;
-    /* z-index- поднимаем элемент, потому что он находится под .header-content */
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    
-    &__container {
-       /* display: flex; */
-       display: grid;
-       /* становятся в один ряд */
-       grid-template-columns: auto 1fr;
-       /* текст logo и iteam находятся на одном уровне по середине */
-       align-items: center;
-       @extend %container
-    }
-  }
+   position: absolute;
+   /* z-index- поднимаем элемент, потому что он находится под .header-content */
+   z-index: 1;
+   top: 0;
+   left: 0;
+   right: 0;
+
+   &__container {
+      /* display: flex; */
+      display: grid;
+      /* становятся в один ряд */
+      grid-template-columns: auto 1fr;
+      /* текст logo и iteam находятся на одном уровне по середине */
+      align-items: center;
+      @extend %container;
+   }
+}
