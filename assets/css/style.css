@@ -1,5 +1,4 @@
 @charset 'UTF-8';
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
 
@@ -355,32 +354,39 @@ h1 {
   height: 60px;
   font-size: 1.125rem;
   background-color: rgba(255, 255, 255, 0.1); /* ffffff */
-  border: 2px #fff solid;
+border: 2px #fff solid;
 }
+
 .btn--primary {
   min-width: 350px;
   height: 60px;
   font-size: 1.125rem;
   border: 2px solid rgba(45, 54, 81, 0.8);
-  background-color: rgba(45, 54, 81, 0.8); /* #2d3651 */
+  background-color: rgba(45, 54, 81, 0.8);
+  /* #2d3651 */
 }
+
 .skill__actions {
   display: flex;
   justify-content: center;
 }
+
 .btn--light:first-of-type {
   margin-right: 20px;
 }
+
 .btn:hover {
   background-color: #d53d27;
 }
+
 .skill {
   padding: 10px;
   margin-bottom: 30px;
 }
+
 .skill__container {
   display: grid;
-  grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+  grid-template-areas: "a1 a1 a2 a3""a4 a5 a5 a6""a7 a8 a9 a6";
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -392,41 +398,53 @@ h1 {
 
   min-height: calc(33.33vh - 13.3333333333px);
 }
+
 .skill-iteam:hover .skill-iteam__overlay {
   opacity: 0.95 !important;
 }
+
 .skill-iteam:hover .skill-iteam__image {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 .skill-iteam:nth-of-type(1) {
   grid-area: a1;
 }
+
 .skill-iteam:nth-of-type(2) {
   grid-area: a2;
 }
+
 .skill-iteam:nth-of-type(3) {
   grid-area: a3;
 }
+
 .skill-iteam:nth-of-type(4) {
   grid-area: a4;
 }
+
 .skill-iteam:nth-of-type(5) {
   grid-area: a5;
 }
+
 .skill-iteam:nth-of-type(6) {
   grid-area: a6;
 }
+
 .skill-iteam:nth-of-type(7) {
   grid-area: a7;
 }
+
 .skill-iteam:nth-of-type(8) {
   grid-area: a8;
 }
+
 .skill-iteam:nth-of-type(9) {
   grid-area: a9;
 }
+
 .skill-iteam__image {
   position: absolute;
   top: 0;
@@ -473,9 +491,11 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
 }
+
 .skill-iteam__link:hover {
   color: #d53d27;
 }
+
 .skill-iteam__title {
   position: absolute;
   z-index: 2;
