@@ -1,45 +1,35 @@
 .header-navbar {
-    font-size: 18px;
+ font-size: 18px;
 
-    &__iteam {
-      /* display: flex; */
-      /* элементы будут стоять не с лева, а с права (в конце), и туда можно вписывать много контента, проблем с этим не будет (не только Home, About ...) */
-      /* justify-content: flex-end; */
-    
-      display: grid;
-      /*grid-template-columns: 100px 100px 100px: если мы будем добавлять контент, оно будет стоять блоками! */
-      /* grid-template-columns: 100px 100px 100px (3, 100px); */
-    
-      /* вместо autofit можно написать любое количество (типо блоков), но мы пишем autofit, что-бы при добавлении контента не было блоков и строка растягивается автоматически
-        minmax- перое пишем минимальный размер, max-content- максимальный (либо можно написать в пикселях, например) */
-      grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-      justify-content: end;
-    
-      margin: 0 -(gap) 0 0;
-      padding: 0;
-      list-style: none;
-      font-size: 18px;
-      letter-spacing: 0.09em;
-    }
+ &__iteam {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+  justify-content: end;
 
-    &__list {
-      /* что-бы гугл не ругался */
-      margin-left: $gap / 2;
-      margin-right: $gap / 2;
-    }
+  margin: 0 -(gap) 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  letter-spacing: 0.09em;
+ }
 
-    &__link {
-      display: block;
-      padding: $gap $gap / 2;
-      text-align: center;
-      transition: color 0.5s;
+ &__list {
+  margin-left: $gap / 2;
+  margin-right: $gap / 2;
+ }
 
-      &:hover {
-        color: $color-highlight;
-    }
-    }
-    
-    &__btm {
-      display: none;
-    }
+ &__link {
+  display: block;
+  padding: $gap $gap / 2;
+  text-align: center;
+  transition: color 0.5s;
+
+  &:hover {
+   color: $color-highlight;
   }
+ }
+
+ &__btm {
+  display: none;
+ }
+}

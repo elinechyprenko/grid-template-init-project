@@ -1,25 +1,14 @@
 .header {
-    position: relative;
-    min-height: 100vh;
-    background-image: url(../img/img-header.png);
-    background-position: center;
-    background-size: cover;
-    background-color: $color-primary;
-    color: $color-light;
-    /* устанавливаем padding что-бы когда мы двигаем окно снизу вверх- контент (h1) не залазил под header-menu */
-    padding-top: 150px;
-    padding-bottom: 150px;
-
-    /* Первый вариант через flex */
-    /* display: flex - ставит header-menu и header-content в один ряд
-    align-iteam: center - устанавливает header-menu и header-content по середине (по оси y)
-    justify-content: center - устанавливает header-menu и header-content по середине страницы (по оси x) */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* Второй вариант через grid */
-    /* display: grid;
-   justify-content: center;
-   align-items: center; */
+ position: relative;
+ min-height: 100vh;
+ background-image: url(../img/img-header.png);
+ background-position: center;
+ background-size: cover;
+ background-color: $color-primary;
+ color: $color-light;
+ padding-top: 150px;
+ padding-bottom: 150px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
